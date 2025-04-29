@@ -27,6 +27,7 @@ The form uses the `[formGroup]` directive to bind to the `loginForm` object in t
 The `(ngSubmit)` event is used to trigger the `onSubmit()` method when the form is submitted.
 The submit button is disabled if the form is invalid.
 -->
+
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <label for="username">Username:</label>
     <input id="username" formControlName="username" required>
